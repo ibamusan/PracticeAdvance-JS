@@ -52,20 +52,43 @@ alert('I am a ' + Job + ' and ' + age + ' years old.');
   if/else Statement
   */
 
-var markMass = 56;
-var johnMass = 155;
-var markHeight = 9.5;
-var johnHeight = 6;
-var markBMI = markMass / (markHeight * markHeight);
-console.log('Mark\'s BMI is ' + markBMI);
-var johnBMI = johnMass / (johnHeight * johnHeight);
-console.log('John\'s BMI is ' + johnBMI);
+// var markMass = 56;
+// var johnMass = 155;
+// var markHeight = 9.5;
+// var johnHeight = 6;
+// var markBMI = markMass / (markHeight * markHeight);
+// console.log('Mark\'s BMI is ' + markBMI);
+// var johnBMI = johnMass / (johnHeight * johnHeight);
+// console.log('John\'s BMI is ' + johnBMI);
 
-if(markBMI > johnBMI){
-  console.log('Mark\'s BMI ' + 'is greater than John\'s BMI');
-} else{
-  console.log('John\'s BMI ' + 'is greater than Mark\'s BMI');
-}
+// if(markBMI > johnBMI){
+//   console.log('Mark\'s BMI ' + 'is greater than John\'s BMI');
+// } else{
+//   console.log('John\'s BMI ' + 'is greater than Mark\'s BMI');
+// }
+
+
+/*=======================================
+  Function
+  */
+
+  function calculateAge(birthyear) {
+      return 2019 - birthyear;
+  }
+
+  var myAge = calculateAge(1990);
+  console.log(myAge);
+
+
+  function retirementUntil(year) {
+      var myAge = calculateAge(year);
+      var retirementAge = 65 - myAge;
+      console.log(retirementAge) 
+  }
+
+retirementUntil(1990);
+
+
 
 
 
