@@ -1,23 +1,23 @@
-var firstName = 'Ibrahim';
+// var firstName = 'Ibrahim';
 
-console.log(firstName);
+// console.log(firstName);
 
 //Type coercion
-var Job, isMarried, age;
-age = 28;
-Job = 'Developer';
-isMarried = false;
+// var Job, isMarried, age;
+// age = 28;
+// Job = 'Developer';
+// isMarried = false;
 
-console.log('My name is ' + firstName + ', I am ' + age + 'years old.' + ' I am working as a' + ' ' + Job  + ', Are you married? '  + isMarried);
+// console.log('My name is ' + firstName + ', I am ' + age + 'years old.' + ' I am working as a' + ' ' + Job  + ', Are you married? '  + isMarried);
 
-//Variable Mutation
+// //Variable Mutation
 
-age = 'twenty eight';
-Job = 'Driver';
+// age = 'twenty eight';
+// Job = 'Driver';
 
-var lastName = prompt('what is lastName');
-console.log(firstName + ' ' + lastName);
-alert('I am a ' + Job + ' and ' + age + ' years old.');
+// var lastName = prompt('what is lastName');
+// console.log(firstName + ' ' + lastName);
+// alert('I am a ' + Job + ' and ' + age + ' years old.');
 
 /*=======================================
   Using the Console.log() to Evaluate exercise in Javascript Course
@@ -89,10 +89,31 @@ alert('I am a ' + Job + ' and ' + age + ' years old.');
 retirementUntil(1990);
 
 
+/*=======================================
+  Object and Property
+  */
 
+var ibrahim = new Object();
+ibrahim.firstName = 'Amusan';
+ibrahim.lastName = 'Ibrahim';
+ibrahim.birtYear = 1989;
+ibrahim['job'] = 'Teacher';
 
+console.log(ibrahim);
 
+/*=======================================
+  Object and Method
+  */
 
-
-
-
+    var Mark = {
+      firstName : 'mark',
+      lastName : 'Billy',
+      birtYear : 1995,
+      job : 'Teacher',
+      calcuAge : function(){
+         this.age = 2018 - this.birtYear;
+      } 
+    };
+    
+   Mark.calcuAge();
+   console.log(Mark);
